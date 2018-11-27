@@ -1,0 +1,33 @@
+div {
+	width:100px;
+	height: 200px;
+
+}
+
+#drawpile{
+	background-color: blue;
+	position: absolute;
+	text-align: center;
+	top: 7em;
+	left: 15em;
+	
+}
+
+#discard{
+	background-color: pink;
+	position: absolute;
+	text-align: center;
+	top: 7em;
+	left: 40em;
+	
+}
+
+#handcard{
+	display: inline;
+	float: left;
+	margin: 2em;
+	position: relative;
+	top: 20em;
+	left: 5em;
+	
+}

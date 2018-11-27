@@ -1,0 +1,135 @@
+body {
+	width: 90%;
+	margin: 0 auto;
+	height: auto;
+	font-family: 'Muli', sans-serif;
+	font-size: 12pt;
+	background-image: url("icecream.jpg")
+}
+
+header {
+	margin-top: 1em;
+	width: 100%;
+	height: 10em;
+	background-color: #C5EBF1;
+	text-align: center;
+	font-family: 'Bad Script', cursive;
+	padding-top: 2em;
+}
+
+h1 {
+	margin: 0em;
+}
+
+h2 {
+	margin: 0em;
+}
+
+fieldset {
+	background-color: #FFD5EF;
+	border-style: none;
+	width: 41%;
+	padding-left: 2em;
+}
+
+button {
+	background-color: #FFD5EF;
+	border-radius: 12px;
+	height: 3em;
+	width: 8em;
+}
+
+.Error {
+	color: red;
+	font-size: 8pt;
+	display: none;
+}
+
+#WaffelOrCup {
+	text-align: center;
+}
+
+#ParagraphIcecream {
+	display: inline;
+}
+
+#Waffel {
+	margin: 2em 4.5em 0.5em 4.5em;
+}
+
+#Cup {
+	margin: 2em 4.5em 0.5em 4.5em;
+}
+
+#ErrorWaffelCup {
+	margin-bottom: 4em;
+}
+
+#Icecream select {
+	border-style: solid;
+	border-color: white;
+	background-color: #FFD5EF;
+	width: 10em;
+}
+
+#Icecream input {
+	margin: 0em 0em 0em 4em;
+	border-style: solid;
+	border-color: white;
+	background-color: #FFD5EF;
+	width: 2.5em;
+	border-style: solid;
+}
+
+#AddIcecreamToOrder {
+	margin: 2em 0em 1em 4em;
+}
+
+#AddIcecream {
+	margin: 1em 0em 1em 1em;
+}
+
+#Toppings {
+	width: 10em;
+}
+
+.RightRowToppings {
+	margin-left: 4em;
+	text-align: right;
+}
+
+#Delivery {
+	margin-left: 3em;
+}
+
+#CustomerData input {
+	border-radius: 12px;
+	margin: 0.5em;
+}
+
+#CustomerData input:invalid {
+	background-color: red;
+}
+
+#CustomerData input:required{
+	background-color: white;
+}
+
+#Orderview {
+	width: 41%;
+	display: inline;
+	float: right;
+	background-color: #FFD5EF;
+	padding: 1em;
+	position: relative;
+	bottom: 50.4em;
+}
+
+#Orderview p {
+	width: 4em;
+	display: inline-block;
+}
+
+#Sum {
+	float: right;
+}

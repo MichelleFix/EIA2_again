@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!--Aufgabe: Aufgabe 9
+Name: Michelle Fix
+Matrikel: 254671
+Datum: 06.06.2017
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+
+
+### Leider habe ich riesen Probleme mit Eclipse, ich kann noch so oft ein "Clean" durchführen oder meinen Laptop neustarten, sobald ich einen 
+Autofokus mache, verreißt es mir das Dokument und kopiert irgendwelche Zeilen. Seit dem letzten "Clean" wird auch keine JS-Datei mehr erstellt,
+sodass ich nicht prüfen kann was von meinem Code funktioniert und was nicht. In meiner Ts-Datei wird alles rot unterstrichen sobald ich 
+etwas schreibe.
+Also das Programm funktioniert definitiv nicht. 
+ -->
+<head>
+<meta charset="utf-8" />
+<title>FormElements</title>
+
+<!-- Standartschrift Muli -->
+<link
+	href="https://fonts.googleapis.com/css?family=Bad+Script|Muli|Sacramento"
+	rel="stylesheet">
+
+<link rel="stylefghsheet" href="Aufgabe9.css" type="text/css" />
+<script src="Aufgafghbe9.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+
+	<header>
+		<h1>Der Eisdealer</h1>
+		<h2>Wir bringen dir den Stoff für die heißen Tage!</h2>
+	</header>
+	<section id="Formular">
+		<fieldset id="WaffelOrCup">
+			<legend> Erstelle deinen persönlichen Eisbecher </legend>
+
+			<!--WAFFEL oder BECHER  -->
+			<button id="Waffel">Waffel</button>
+			<p id="ParagraphIcecream">oder</p>
+			<button id="Cup">Becher</button>
+
+			<p class="Error" id="ErrorWaffelCup">* Bitte wählen Sie eine
+				Darreichungsform</p>
+			<br>
+		</fieldset>
+		
+		<fieldset id="Icecream">
+			<!--EISSORTE  -->
+			<h3 id="FlavorHeadline">Eissorten</h3> <br> 
+			<div id="SelectFlavors"> </div>
+
+			<!--ANZAHL DER KUGELN  -->
+			<input type="number" id="ScoopCounter" name="Scoops" step="1" min="1" max=" "
+				value="0" />
+
+			<!--Eissorte und Kugeln hinzufügen  -->
+			<!-- ERROR -->
+			<br>
+			<p class="Error" class="ErrorSorts">* Bitte wählen Sie eine Eissorte</p>
+			<p class="Error" class="ErrorScoops">* Bitte geben Sie die Anzahl
+				der Kugeln an</p>
+			<hr>
+
+			<button id="AddIcecream">+ Eissorte hinzufügen</button>
+
+		</fieldset>
+
+		<fieldset id="CheckboxToppings">
+			<legend> Toppings </legend>
+	
+		</fieldset>
+
+		<fieldset id="Deliveryoptions">
+			<legend> Lieferoptionen </legend>
+			<input type="radio" name="Delivery" value="radio1" id="Pickup" /> 
+			<label for="radio1">Abholung im Geschäft</label> 
+			
+			<input type="radio"	name="Delivery" value="radio2" id="Delivery" /> 
+			<label for="radio2">Lieferung nach Hause</label>
+			
+			<p class="Error" id="ErrorDeliveryoptions">* Bitte wählen Sie
+				eine Lieferoption</p>
+		</fieldset>
+
+		<fieldset id="CustomerData">
+			<legend> Kundendaten </legend>
+
+			<input type="text" name="Name" id="Name" placeholder="Vorname" required /> <input
+				type="text" name="Surname" id="Surname" placeholder="Name" /> <br> <input
+				type="text" name="Street" id="Street" placeholder="Straße" /> <input
+				type="text" name="Housenumber" id="Housenumber" pattern="[0-9]{4}" placeholder="Nr." />
+			<br> <input type="text" name="Postcode" id="Postcode" pattern="[0-9]{4}"placeholder="PLZ" /> 
+			<input type="text" name="Place" id="Place"	placeholder="Ort" />
+			<input type="email" name="Mail" id="Mail"	placeholder="E-Mail" />
+
+			<p class="Error" id="ErrorCustomerData">* Bitte überprüfen Sie
+				Ihre Angaben</p>
+		</fieldset>
+	</section>
+
+	<section id="OrderSummary">
+
+		<h2>Bestellübersicht</h2>
+
+		<hr>
+		<p id="Items"> </p>
+
+		<p>Gesamt:</p>
+		<p id="Sum"></p>
+
+
+	</section>
+
+	<button id="checkOrder">Eingaben überprüfen</button>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<!--Aufgabe: Aufgabe 9
+Name: Michelle Fix
+Matrikel: 254671
+Datum: 06.06.2017
+Hiermit versichere ich, dass ich diesen Code selbst geschrieben habe. Er wurde nicht kopiert und auch nicht diktiert.
+
+ -->
+
+<head>
+<meta charset="utf-8" />
+
+<title>FormElements</title>
+
+<link
+	href="https://fonts.googleapis.com/css?family=Bad+Script|Muli|Sacramento"
+	rel="stylesheet">
+
+<link rel="stylesheet" href="Aufgabe9.css" type="text/css" />
+<script src="Aufgabe9_neu.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+
+<body>
+
+	<header>
+		<h1>Der Eisdealer</h1>
+	</header>
+
+	<section id="Formular">
+		<fieldset id="Order">
+			<legend> Erstelle deinen persönlichen Eisbecher </legend>
+
+			<!--WAFFEL oder BECHER  -->
+			<div id="WaffelOrCup">
+				<p class="Error" id="ErrorWaffelCup">* Bitte wählen Sie eine
+					Darreichungsform</p>
+			</div>
+			<hr>
+
+			<!--Eissorte  -->
+			<h3 id="FlavorHeadline">Eissorten</h3>
+			<br>
+			<div id="Flavors"></div>
+			<p class="Error" id="ErrorSorts">* Bitte wählen Sie eine Eissorte</p>
+			<!-- Kugeln  -->
+			<div id="Scoops"></div>
+			<p class="Error" id="ErrorScoops">* Bitte geben Sie die Anzahl
+				der Kugeln an</p>
+			<hr>
+			<!-- Toppings  -->
+			<h3 id="ToppingHeadline">Toppings</h3>
+			<br>
+			<div id="Toppings"></div>
+		</fieldset>
+
+		<fieldset id="Deliveryoptions">
+			<legend> Lieferoptionen </legend>
+
+			<div id="Delivery">
+
+
+			</div>
+
+			<p class="Error" id="ErrorDeliveryoptions">* Bitte wählen Sie
+				eine Lieferoption</p>
+
+		</fieldset>
+
+		<fieldset id="CustomerData">
+			<legend> Kundendaten </legend>
+
+			<input type="text" name="Name" id="Name" placeholder="Vorname"
+				required /> <input type="text" name="Surname" id="Surname"
+				placeholder="Name" /> <br> <input type="text" name="Street"
+				id="Street" placeholder="Straße" /> <input type="text"
+				name="Housenumber" id="Housenumber" pattern="[0-9]{2}"
+				placeholder="Nr." /> <br> <input type="text" name="Postcode"
+				id="Postcode" pattern="[0-9]{5}" placeholder="PLZ" /> <input
+				type="text" name="Place" id="Place" placeholder="Ort" /> <input
+				type="email" name="Mail" id="Mail" placeholder="E-Mail" />
+
+			<p class="Error" id="ErrorCustomerData">* Bitte überprüfen Sie
+				Ihre Angaben</p>
+		</fieldset>
+	</section>
+
+	<section id="Orderview">
+
+		<h2>Bestellübersicht</h2>
+
+		<hr>
+
+		<div id="OrderSummary"></div>
+		<p id="Items"></p>
+
+		<p>Gesamt:</p>
+		<p id="Sum"></p>
+
+
+	</section>
+
+	<button id="checkOrder">Eingaben überprüfen</button>
+
+</body>

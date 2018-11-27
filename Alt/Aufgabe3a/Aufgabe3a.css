@@ -1,0 +1,27 @@
+div {
+	width:100px;
+	height: 100px;
+	float: left;
+	color: blue;
+	overflow: auto;
+}
+
+.divFloat {
+	clear: both;
+}
+
+.marked{
+	background-color: yellow !important;
+}
+
+
+#display{
+	height: 5em;
+	width: 10em;
+	padding: 0.5em;
+	z-index: 100;
+	background-color: grey;
+	position: absolute;
+	fontsize: 10pt;
+	text-align: center;
+}

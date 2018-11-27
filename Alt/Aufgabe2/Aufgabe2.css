@@ -1,0 +1,11 @@
+div {
+	width:100px;
+	height: 100px;
+	float: left;
+	color: blue;
+	overflow: auto;
+}
+
+.divFloat {
+	clear: both;
+}
